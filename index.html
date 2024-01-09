@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CadastroG</title>
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="projeto.js"></script>
+    
+</head>
+<body>
+  <header>
+    <img src="OLX_CAPA_JOGOS_ANTIGOS.png" class="img-fluid" alt="Logotipo"/> 
+  </header>
+  <nav class="navbar navbar-expand-dark navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Cadastro de Jogos</a>
+    </div>
+  </nav>  
+    
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-md-6">
+        
+              <div class="mb-3 mt-3">
+                <input type="number" class="form-control" id="codigo" placeholder="Código"/>
+              </div>
+
+              <div class="mb-3 ">
+                <input type="text" class="form-control" id="titulo" placeholder="Título"/>
+              </div>
+
+              <div class="mb-3">
+                <input type="text" class="form-control" id="autor" placeholder="Criador"/>
+              </div>
+
+              <div class="mb-3">
+                <input type="number" class="form-control" id="edicao" placeholder="Edição"/>
+              </div>
+
+              <div class="mb-3 ">
+                <input type="text" class="form-control" id="genero" placeholder="Gênero"/>
+              </div>
+            
+            
+              <button class="btn btn-primary" id="btnSalvar">Salvar</button>
+              <button class="btn btn-secondary" id="btnCancelar">Cancelar</button>
+          </div>
+          <div class="col-md-6">
+            
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Código</th>
+                  <th scope="col">Título</th>
+                  <th scope="col">Nome do Criador</th>
+                  <th scope="col">Edição</th>
+                  <th scope="col">Gênero</th>
+                  <th scope="col">Alterar</th>
+                  <th scope="col">Excluir</th>
+                </tr>
+              </thead>
+              <tbody id="tabela">
+                
+              </tbody>
+            </table>
+          </div>
+        </div>    
+      </div>
+
+      <footer class="mt-5 ps-5">
+        
+        <button id="btnJson" class="btn btn-primary" >Gerar JSON</button>
+        <br/><br/><br/>
+        <button id="btnAjax" class="btn btn-primary">AJAX</button>
+        <br/>
+        <p id="data"></p>
+
+      </footer>
+    
+</body>
+</html>
